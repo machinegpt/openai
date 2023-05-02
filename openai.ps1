@@ -47,6 +47,7 @@ while ($true) {
                 # n = 2
             }
         }
+        Write-Host "max tokens: $max_prompt_tokens"
         Write-Host "[+] Openai: "
         $jsonBody = $body | ConvertTo-Json
         $gzipBody = [System.Text.Encoding]::UTF8.GetBytes($jsonBody)
